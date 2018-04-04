@@ -1,0 +1,21 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start dev app",
+            "type": "shell",
+            "command": "workon reddit-classifier; flask run",
+            "problemMatcher": [],
+            "options": {
+                "env": {
+                    "FLASK_APP": "main.py",
+                    "FLASK_DEBUG": "1",
+                    "REDDIT_CLIENT_ID": "HsMh0v7_qWvX9A",
+                    "REDDIT_CLIENT_SECRET": "0D6EI94ZVkawu01l-Zu0meGsRD0"
+                }
+            }
+        }
+    ]
+}
